@@ -7,7 +7,7 @@ int kullback_leibler_dvg(double p[], double q[],int len) {
     double s_qp = 0.0;
     for(int i=0; i<len; i++) {
         s_pq = s_pq + p[i] * log(p[i]/q[i]);
-        s_qp = s_qp + q[i] * log(q[i]/p[i]);
+        s_qp = s_qp + q[i] * log(q[i]/p[i]); // kullback_leibler_dvg(n2,n1,len);
     }
     std::cout << "P || Q = " << s_pq << '\n';
     std::cout << "Q || P = " << s_qp << std::endl;
